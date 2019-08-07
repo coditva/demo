@@ -1,5 +1,4 @@
 const http = require('http');
-const express = require('express');
 
 // a simple server
 const server = http.createServer(function (request, response) {
