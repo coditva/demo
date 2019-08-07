@@ -8,6 +8,7 @@ const server = http.createServer(function (request, response) {
     // end response
     response.end('OK');
 }).listen(5000, function () {
+    // log listening
     console.log('listening on 5000');
 });
 
