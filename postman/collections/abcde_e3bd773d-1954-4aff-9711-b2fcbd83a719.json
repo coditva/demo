@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "58dc8a72-537e-42be-bfae-c7eb390df27d",
+		"name": "abcde",
+		"description": "adsf **abadsf**",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "abcd",
+			"id": "92dd2c5f-1f47-4a4c-bfd9-86695faa3e24",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user/:id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				},
+				"description": "abcde"
+			},
+			"response": [
+				{
+					"id": "f3235b01-d47b-4a8b-907f-8e5be5ccbcaf",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n \"code\": -71935363,\n \"message\": \"est dolore proident Duis\"\n}"
+				},
+				{
+					"id": "18c64a3d-1f62-490f-89d4-24c4dbf8d0b3",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "irure pariatur qui nostrud"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n \"id\": -87761074,\n \"name\": \"consectetur sit labore\",\n \"tag\": \"ea\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update request",
+			"id": "99ec9d59-a22b-47be-867b-e318297f49f1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{access_token}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1337/request/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"request",
+						":id"
+					],
+					"variable": [
+						{
+							"id": "2f4e224f-ff71-4cf1-acd3-0ce6811d4819",
+							"key": "id",
+							"value": "118680-92dd2c5f-1f47-4a4c-bfd9-86695faa3e24"
+						}
+					]
+				},
+				"description": "abcdef"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1337/x/api/collection/:id?user_id=118680",
+			"id": "4f4b4085-0132-4323-bf30-39156ae17be2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "def",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "abc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/x/api/collection/:id?user_id=118680",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"x",
+						"api",
+						"collection",
+						":id"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "118680",
+							"type": "text"
+						}
+					],
+					"variable": [
+						{
+							"id": "cf3bcafe-b41f-4453-ac87-31af9d75bdae",
+							"key": "id",
+							"value": "118680-a4715c3d-fc0c-4ec2-8ed1-9f88190b9623"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9c96d305-1f3b-4a31-9b32-08fe4eab0eff",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "92489b3b-6a0d-439b-a9af-095b2a703505",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e875f573-e6dc-4342-b2c6-b01616b6c84b",
+			"key": "baseUrl",
+			"value": "https://petstore.swagger.io/v1"
+		}
+	]
+}
