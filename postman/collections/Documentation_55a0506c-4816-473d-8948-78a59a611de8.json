@@ -162,30 +162,7 @@
                     "name": "Sample response: Details about a user by ID",
                     "originalRequest": {
                         "method": "GET",
-                        "header": [
-                            {
-                                "description": "Added as a part of security scheme: basic",
-                                "key": "Authorization",
-                                "value": "Basic <credentials>"
-                            }
-                        ],
-                        "url": {
-                            "raw": "{{baseUrl}}/user/:id",
-                            "host": [
-                                "{{baseUrl}}"
-                            ],
-                            "path": [
-                                "user",
-                                ":id"
-                            ],
-                            "variable": [
-                                {
-                                    "key": "id",
-                                    "value": "72165404",
-                                    "description": "(Required) ID of the user"
-                                }
-                            ]
-                        }
+                        "header": []
                     },
                     "status": "OK",
                     "code": 200,
