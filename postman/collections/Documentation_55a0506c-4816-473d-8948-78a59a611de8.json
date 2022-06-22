@@ -7,6 +7,7 @@
     "item": [
         {
             "name": "Returns details about a particular user",
+            "id": "733c2761-6f0d-4a1c-ad3d-4d7fec7d8c0c",
             "request": {
                 "method": "GET",
                 "header": [
@@ -27,7 +28,7 @@
                     "variable": [
                         {
                             "key": "id",
-                            "value": "72165404",
+                            "value": "72165403",
                             "description": "(Required) ID of the user"
                         }
                     ]
@@ -35,6 +36,7 @@
             },
             "response": [
                 {
+                    "id": "da51950d-947e-4dc5-ad99-eb8c28b27056",
                     "name": "Sample response: Details about a user by ID",
                     "originalRequest": {
                         "method": "GET",
@@ -82,6 +84,7 @@
                     "body": "{\n  \"id\": 7592569,\n  \"name\": \"in velit ut\",\n  \"tag\": \"enim laborum\"\n}"
                 },
                 {
+                    "id": "bbd0acd5-00c5-4bfa-8581-93e0c684558f",
                     "name": "Unexpected error",
                     "originalRequest": {
                         "method": "GET",
@@ -142,6 +145,7 @@
     },
     "variable": [
         {
+            "id": "5002e9ea-0145-4b13-8209-80b3a67fb653",
             "key": "baseUrl",
             "value": "https://petstore.swagger.io/v1",
             "type": "string"
