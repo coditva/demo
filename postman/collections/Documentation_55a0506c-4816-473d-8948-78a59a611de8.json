@@ -3,11 +3,11 @@
         "_postman_id": "10658df7-d1d7-497d-9c47-9f3aebf5d886",
         "name": "Documentation 4",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-        "owner": "1"
+        "_postman_uid": "118680-10658df7-d1d7-497d-9c47-9f3aebf5d886"
     },
     "item": [
         {
-            "name": "Returns details about a particular user Copy",
+            "name": "Returns details about a particular user Copy 2",
             "id": "773c1a3a-5473-4ee3-8fc5-909a66dfd184",
             "request": {
                 "method": "GET",
