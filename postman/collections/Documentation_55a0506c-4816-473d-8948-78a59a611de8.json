@@ -7,7 +7,7 @@
     },
     "item": [
         {
-            "name": "Returns details about a particular user Copy 2",
+            "name": "Returns details about a particular user Copy",
             "id": "773c1a3a-5473-4ee3-8fc5-909a66dfd184",
             "request": {
                 "method": "GET",
