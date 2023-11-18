@@ -1,18 +1,46 @@
 {
 	"info": {
-		"_postman_id": "58dc8a72-537e-42be-bfae-c7eb390df27d",
+		"_postman_id": "b9b3b63c-17f8-42e3-93a6-530ad137cdcc",
 		"name": "abcde",
 		"description": "adsf **abadsf**",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "118680-b9b3b63c-17f8-42e3-93a6-530ad137cdcc"
 	},
 	"item": [
 		{
 			"name": "abcd",
-			"id": "92dd2c5f-1f47-4a4c-bfd9-86695faa3e24",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8b764553-f41e-40b8-be03-3dbc942d157b",
+						"exec": [
+							"console.log('req');"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "84b8723d-a181-4383-b6f1-fec2e99ce3a2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -35,7 +63,7 @@
 			},
 			"response": [
 				{
-					"id": "f3235b01-d47b-4a8b-907f-8e5be5ccbcaf",
+					"id": "e3d1d895-c210-4289-9e2d-8f205aeae9dc",
 					"name": "Unexpected error",
 					"originalRequest": {
 						"method": "GET",
@@ -46,18 +74,29 @@
 								"value": "Basic <credentials>"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "some body"
+						},
 						"url": {
-							"raw": "{{baseUrl}}/user/:id",
+							"raw": "{{baseUrl}}/user/:id2?ads={{new}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"user",
-								":id"
+								":id2"
+							],
+							"query": [
+								{
+									"key": "ads",
+									"value": "{{new}}"
+								}
 							],
 							"variable": [
 								{
-									"key": "id"
+									"key": "id2",
+									"value": ""
 								}
 							]
 						}
@@ -65,6 +104,7 @@
 					"status": "Internal Server Error",
 					"code": 500,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"key": "Content-Type",
@@ -72,11 +112,10 @@
 						}
 					],
 					"cookie": [],
-					"responseTime": null,
 					"body": "{\n \"code\": -71935363,\n \"message\": \"est dolore proident Duis\"\n}"
 				},
 				{
-					"id": "18c64a3d-1f62-490f-89d4-24c4dbf8d0b3",
+					"id": "fd449620-603f-409b-91c0-30bb84018962",
 					"name": "Sample response: Details about a user by ID",
 					"originalRequest": {
 						"method": "GET",
@@ -106,6 +145,7 @@
 					"status": "OK",
 					"code": 200,
 					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
 					"header": [
 						{
 							"disabled": false,
@@ -119,14 +159,13 @@
 						}
 					],
 					"cookie": [],
-					"responseTime": null,
 					"body": "{\n \"id\": -87761074,\n \"name\": \"consectetur sit labore\",\n \"tag\": \"ea\"\n}"
 				}
 			]
 		},
 		{
 			"name": "update request",
-			"id": "99ec9d59-a22b-47be-867b-e318297f49f1",
+			"id": "bcee15f8-a312-43e2-8a3e-f9a9267a21fa",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -169,7 +208,6 @@
 					],
 					"variable": [
 						{
-							"id": "2f4e224f-ff71-4cf1-acd3-0ce6811d4819",
 							"key": "id",
 							"value": "118680-92dd2c5f-1f47-4a4c-bfd9-86695faa3e24"
 						}
@@ -181,7 +219,7 @@
 		},
 		{
 			"name": "localhost:1337/x/api/collection/:id?user_id=118680",
-			"id": "4f4b4085-0132-4323-bf30-39156ae17be2",
+			"id": "f765e090-88cc-49d1-9b77-702e93472f34",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -224,7 +262,6 @@
 					],
 					"variable": [
 						{
-							"id": "cf3bcafe-b41f-4453-ac87-31af9d75bdae",
 							"key": "id",
 							"value": "118680-a4715c3d-fc0c-4ec2-8ed1-9f88190b9623"
 						}
@@ -238,13 +275,13 @@
 		"type": "basic",
 		"basic": [
 			{
-				"key": "username",
-				"value": "<Basic Auth Username>",
+				"key": "password",
+				"value": "password",
 				"type": "string"
 			},
 			{
-				"key": "password",
-				"value": "<Basic Auth Password>",
+				"key": "username",
+				"value": "username",
 				"type": "string"
 			}
 		]
@@ -253,17 +290,17 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9c96d305-1f3b-4a31-9b32-08fe4eab0eff",
+				"id": "82015117-5b35-47dc-90cc-4f892f830a09",
 				"type": "text/javascript",
 				"exec": [
-					""
+					"console.log('1hi');"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "92489b3b-6a0d-439b-a9af-095b2a703505",
+				"id": "565a4f54-4250-491e-97f8-4e81b0013237",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -273,7 +310,7 @@
 	],
 	"variable": [
 		{
-			"id": "e875f573-e6dc-4342-b2c6-b01616b6c84b",
+			"id": "3683bba7-a0d9-40fa-babc-f55116cdf1d5",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v1"
 		}

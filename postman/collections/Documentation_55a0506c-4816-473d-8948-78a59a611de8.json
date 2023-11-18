@@ -1,150 +1,230 @@
 {
-    "info": {
-        "_postman_id": "10658df7-d1d7-497d-9c47-9f3aebf5d886",
-        "name": "Documentation",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-    },
-    "item": [
-        {
-            "name": "Returns details about a particular user",
-            "request": {
-                "method": "GET",
-                "header": [
-                    {
-                        "key": "Accept",
-                        "value": "application/json"
-                    }
-                ],
-                "url": {
-                    "raw": "{{baseUrl}}/user/:id",
-                    "host": [
-                        "{{baseUrl}}"
-                    ],
-                    "path": [
-                        "user",
-                        ":id"
-                    ],
-                    "variable": [
-                        {
-                            "key": "id",
-                            "value": "72165404",
-                            "description": "(Required) ID of the user"
-                        }
-                    ]
-                }
-            },
-            "response": [
-                {
-                    "name": "Sample response: Details about a user by ID",
-                    "originalRequest": {
-                        "method": "GET",
-                        "header": [
-                            {
-                                "description": "Added as a part of security scheme: basic",
-                                "key": "Authorization",
-                                "value": "Basic <credentials>"
-                            }
-                        ],
-                        "url": {
-                            "raw": "{{baseUrl}}/user/:id",
-                            "host": [
-                                "{{baseUrl}}"
-                            ],
-                            "path": [
-                                "user",
-                                ":id"
-                            ],
-                            "variable": [
-                                {
-                                    "key": "id",
-                                    "value": "72165404",
-                                    "description": "(Required) ID of the user"
-                                }
-                            ]
-                        }
-                    },
-                    "status": "OK",
-                    "code": 200,
-                    "_postman_previewlanguage": "json",
-                    "header": [
-                        {
-                            "disabled": false,
-                            "description": "A link to the next page of responses",
-                            "key": "x-next",
-                            "value": "ipsum culpa ullamco"
-                        },
-                        {
-                            "key": "Content-Type",
-                            "value": "application/json"
-                        }
-                    ],
-                    "cookie": [],
-                    "body": "{\n  \"id\": 7592569,\n  \"name\": \"in velit ut\",\n  \"tag\": \"enim laborum\"\n}"
-                },
-                {
-                    "name": "Unexpected error",
-                    "originalRequest": {
-                        "method": "GET",
-                        "header": [
-                            {
-                                "description": "Added as a part of security scheme: basic",
-                                "key": "Authorization",
-                                "value": "Basic <credentials>"
-                            }
-                        ],
-                        "url": {
-                            "raw": "{{baseUrl}}/user/:id",
-                            "host": [
-                                "{{baseUrl}}"
-                            ],
-                            "path": [
-                                "user",
-                                ":id"
-                            ],
-                            "variable": [
-                                {
-                                    "key": "id",
-                                    "value": "72165404",
-                                    "description": "(Required) ID of the user"
-                                }
-                            ]
-                        }
-                    },
-                    "status": "Internal Server Error",
-                    "code": 500,
-                    "_postman_previewlanguage": "json",
-                    "header": [
-                        {
-                            "key": "Content-Type",
-                            "value": "application/json"
-                        }
-                    ],
-                    "cookie": [],
-                    "body": "{\n  \"code\": -29151864,\n  \"message\": \"cillum\"\n}"
-                }
-            ]
-        }
-    ],
-    "auth": {
-        "type": "basic",
-        "basic": [
-            {
-                "key": "username",
-                "value": "<Basic Auth Username>",
-                "type": "string"
-            },
-            {
-                "key": "password",
-                "value": "<Basic Auth Password>",
-                "type": "string"
-            }
-        ]
-    },
-    "variable": [
-        {
-            "key": "baseUrl",
-            "value": "https://petstore.swagger.io/v1",
-            "type": "string"
-        }
-    ]
+	"info": {
+		"_postman_id": "0041a848-a34a-4a8d-9b2f-a8b4d32872b3",
+		"name": "Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "118680-0041a848-a34a-4a8d-9b2f-a8b4d32872b3"
+	},
+	"item": [
+		{
+			"name": "Returns details about a particular user",
+			"id": "7a69a1db-7395-4b51-a4a4-df3d850cef53",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/user/:id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "72165404",
+							"description": "(Required) ID of the user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ea528bbe-b021-48e2-9c4d-7219656ff020",
+					"name": "Sample response: Details about a user by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/user/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "72165404",
+									"description": "(Required) ID of the user"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "ipsum culpa ullamco"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"id\": 7592569,\n  \"name\": \"in velit ut\",\n  \"tag\": \"enim laborum\"\n}"
+				},
+				{
+					"id": "f7e3472b-4f7a-4de8-a2cb-0c790f112b9e",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "72165404",
+									"description": "(Required) ID of the user"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"code\": -29151864,\n  \"message\": \"cillum\"\n}"
+				},
+				{
+					"id": "bd3d5828-5ddf-43a3-8a87-3c12e88fcaa1",
+					"name": "updated",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "72165404",
+									"description": "(Required) ID of the user"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 17 Nov 2023 09:21:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "<html>\n    <head>\n        <title>404 Not Found</title>\n    </head>\n    <body>\n        <center>\n            <h1>404 Not Found</h1>\n        </center>\n        <hr>\n        <center>nginx</center>\n    </body>\n</html>"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "3cc581ec-e447-4003-a798-4a1e6d49c878",
+			"key": "baseUrl",
+			"value": "https://petstore.swagger.io/v1",
+			"type": "string"
+		}
+	]
 }
